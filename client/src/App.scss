@@ -1,3 +1,29 @@
-h1{
-  font-size: 80px;
+* {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
+
+body{
+	background: #fcfcfc;
+}
+
+.jobs{
+	width: 80%;
+	margin-left:300px;
+
+input, textarea{
+	display: block;
+	margin: 10px;
+	// padding: 10px 10px;
+	border: 1px solid #DFDFDF;
+  padding: 10px;
+ 	width: 60%;
+  font-size: 100%;
+
+  font-family: inherit;
+  font-weight: inherit;
+}
+
+}
+
+
