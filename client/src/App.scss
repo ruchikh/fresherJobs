@@ -5,6 +5,17 @@
 
 body{
 	background: #fcfcfc;
+	padding: 0;
+	margin: 0;
+}
+
+.App{
+	width: 80%;
+	margin: 0 auto;
+}
+
+.header{
+
 }
 
 .jobs{
@@ -13,17 +24,26 @@ body{
 
 input, textarea{
 	display: block;
-	margin: 10px;
+	margin: 10px 0;
 	// padding: 10px 10px;
 	border: 1px solid #DFDFDF;
   padding: 10px;
  	width: 60%;
   font-size: 100%;
+  background: white;
 
   font-family: inherit;
   font-weight: inherit;
 }
+}
 
+.header{
+	display: flex;
+	background: #080711;
+	a{
+		color: #ffffff;
+	}
+	
 }
 
 

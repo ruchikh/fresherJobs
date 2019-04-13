@@ -9,7 +9,7 @@ const path = require("path");
 const port = 8000;
 
 mongoose.connect(
- "mongodb://localhost/writer",
+ "mongodb://localhost/job",
  { useNewUrlParser: true },
  function(err, connection) {
   if (err) throw err;
@@ -27,10 +27,10 @@ app.set("view engine", "ejs");
 
 app.use(
  session({
-  secret: "writer",
+  secret: "job",
   resave: true,
   saveUninitialized: true,
-  store: new MongoStore({ url: "mongodb://localhost/writer-session" })
+  store: new MongoStore({ url: "mongodb://localhost/job-session" })
  })
 );
 
