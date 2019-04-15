@@ -23,6 +23,7 @@ class JobDetails extends Component {
 	}
 
 	componentDidMount(){
+		console.log(this.props, 'Printing the job details')
 		this.props.dispatch(getAllJobs())
 	}
 

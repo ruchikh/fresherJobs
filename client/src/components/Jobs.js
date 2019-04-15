@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
-import {addJobs, getAllJobs} from '../actions';
+import {getAllJobs, isLoggedIn} from '../actions';
 import {connect} from 'react-redux';
 
 class Jobs extends Component {
 
 	componentDidMount(){
-		this.props.dispatch(getAllJobs())
+		this.props.dispatch(getAllJobs());
+    this.props.dispatch(isLoggedIn())
 	}
 
   render() {
@@ -25,7 +26,8 @@ class Jobs extends Component {
 
 const mapStateToProps = (state) => {
 	return {
-		allJobs: state.allJobs
+		allJobs: state.allJobs,
+    currentUser: state.currentUser
 	}
 }
 
